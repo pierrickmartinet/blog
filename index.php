@@ -1,11 +1,16 @@
 <?php
 
+// Affiche les erreurs
+
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+
 require_once 'config/database.php'; // connecte à la BDD 'Blog' grâce à la configuration intégré dans le fichier database.php
 
 // front controller sous forme de tableau
 
 $map = [
-    'home' => 'app/persistences/home.php',
+    'home' => 'app/controllers/homeController.php',
     '404' => 'ressources/views/errors/404.php',
 ];
 
