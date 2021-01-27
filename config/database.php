@@ -1,4 +1,7 @@
 <?php
+
+// connexion à la BDD 'Blog'
+
 try {
     $user = 'pierrick';
     $pass = 'lacolombe02';
