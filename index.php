@@ -5,6 +5,12 @@
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
+// rend le debug plus presentable
+
+function debug($var) {
+    highlight_string("<?php\n" . var_export($var, true) . ";\n?>");
+}
+
 // connecte à la BDD 'Blog' grâce à la configuration intégré dans le fichier database.php / once puisqu'on l'appelle une seule fois
 
 require_once 'config/database.php';

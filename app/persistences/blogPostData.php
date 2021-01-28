@@ -8,6 +8,6 @@ FROM posts
 INNER JOIN `authors` ON `posts`.`authors_id` = `authors`.`id`
 ORDER BY `publication_date` DESC 
 LIMIT 10');
-    $resultat = $resultatRequete->fetchAll(\PDO::FETCH_ASSOC);
-    return $resultat;
+    $resultatfonction = $resultatRequete->fetchAll(\PDO::FETCH_ASSOC);
+    return $resultatfonction;
 }
