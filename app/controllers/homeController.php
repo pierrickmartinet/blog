@@ -1,4 +1,4 @@
-<?php
+<?php // Controller de la page home
 
 // Appelle du fichier contenant la fonction / $dph est utilisable car le database.php est appellé dans l'index (frontController)
 
@@ -8,6 +8,9 @@ require 'app/persistences/blogPostData.php';
 
 $tenLastPost = lastBlogPosts($dbh);
 
+
 // Affiche la view (template) home
 
 require 'ressources/views/home.tpl.php';
+
+

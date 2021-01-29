@@ -5,7 +5,7 @@
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
-// rend le debug plus presentable
+// Rend le debug plus presentable
 
 function debug($var) {
     highlight_string("<?php\n" . var_export($var, true) . ";\n?>");
@@ -19,6 +19,7 @@ require_once 'config/database.php';
 
 $map = [
     'home' => 'app/controllers/homeController.php',
+    'blogpost' => 'app/controllers/blogPostController.php',
     '404' => 'ressources/views/errors/404.php',
 ];
 
